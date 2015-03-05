@@ -1,0 +1,133 @@
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+li {
+  display: inline;
+  list-style-type: none;
+}
+
+ul {
+    padding: 0em 0em 0em 0em;
+}
+
+.jumbotron img {
+  margin: 0.25em 0.25em 0.25em 0.25em;
+  border-style: solid;
+  border-width: 1.5px;
+  border-color: #505050;
+  border-radius: 2px;
+  width: 6.8em;
+  height: 6.8em;
+  cursor: pointer; cursor: hand;
+}
+
+.jumbotron img:focus {
+    outline: none;
+}
+
+.container .jumbotron {
+    text-align: left;
+    padding: 0.5em 0.5em 0.5em 0.5em;
+}
+
+.fullscreen {
+    position: absolute; 
+    top: 0; 
+    left: 0;
+    text-align: center;
+    width: 100%; 
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.fullscreen img {
+    width: auto; 
+    max-height: 100%;
+}
+
+.previous {
+    position: absolute; 
+    top: 0; 
+    left: 0;
+    width: 5em;
+    height: 100%;
+    background: rgba(0, 0, 0, 0);
+}
+
+.previous:hover {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.previous:focus {
+    outline: none;
+}
+
+.next {
+    position: absolute; 
+    top: 0; 
+    right: 0;
+    width: 5em;
+    height: 100%;
+    background: rgba(0, 0, 0, 0);
+}
+
+.next:hover {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.next:focus {
+    outline: none;
+}
+
+.prev-icon {
+    width: 5em; 
+    position: absolute;
+    top: 44%;
+}
+
+.prev-icon:focus {
+    outline: none;
+}
+
+.next-icon {
+    width: 5em; 
+    position: absolute;
+    top: 42%;
+}
+
+.next-icon:focus {
+    outline: none;
+}
+
+.close {
+    position: absolute; 
+    top: 0.3em; 
+    right: 0;
+    background: rgba(0, 0, 0, 0);
+    margin-right: 0.5em;
+}
+
+.close:focus {
+    outline: none;
+}
+
+.close-icon {
+    width: 2.2em; 
+    position: absolute;
+    top: 0%;
+    right: 0;
+}
+
+.close-icon:focus {
+    outline: none;
+}
+
+.galerie {
+    min-height: 35em;
+}

@@ -1,0 +1,173 @@
+$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+// bower:scss
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+@import "normalize-scss/_normalize.scss";
+// endbower
+
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* Space out content a bit */
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background: #fff;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Custom page header */
+.header {
+  border-bottom: 1px solid #e5e5e5;
+
+  /* Make the masthead heading the same height as the navigation */
+  h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 40px;
+    padding-bottom: 19px;
+  }
+}
+
+/* lianacorb - page title */
+.first-name {
+  color: #dd3d27;
+  font-size: 1.2em;
+}
+.last-name {
+  color: #505050;
+  font-size: 1.2em;
+}
+h3>a:focus {
+    outline: none;
+}
+
+/* Menu items */
+.nav-pills>li>a {
+  color: #505050;
+  font-size: 1.2em;
+}
+.nav-pills>li>a:hover {
+  background-color: #dd3d27;
+  color: #EEEEEE;
+  font-size: 1.2em;
+}
+.nav-pills>li>a:focus {
+  background-color: #fff;
+  color: #dd3d27;
+  outline: none;   
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+.footer-link {
+  color: #505050;
+}
+
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+.footer-group {
+  float: right;
+}
+
+.footer-links li {
+  display: inline;
+  list-style-type: none;
+  margin-left: 3em;
+  cursor: pointer;
+}
+
+.footer-link:hover {
+  color: #dd3d27;
+}
+
+// Images section
+.images-section li {
+  display: inline;
+  list-style-type: none;
+  white-space: nowrap;
+}
+
+.images-section img {
+  margin: 0.25em 0.25em 0.25em 0.25em;
+  border-style: solid;
+  border-width: 1.5px;
+  border-color: #505050;
+  border-radius: 2px;
+  width: 18em;
+  height: 18em;
+}
+
+.images-section ul {
+    padding: 0em 0em 0em 0em;
+    overflow: auto;
+}
+
+.container .jumbotron {
+    text-align: left;
+    padding: 0.5em 0.5em 0.5em 0.5em;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+
+  .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+  }
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+
+  p + h4 {
+    margin-top: 28px;
+  }
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  .container {
+    width: 80%;
+    max-width: 1000px;
+  }
+
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
+
+.main {
+  min-height: 37em;
+}

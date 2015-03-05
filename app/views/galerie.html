@@ -1,0 +1,28 @@
+<head>
+    <link rel="stylesheet" href="styles/galerie.css">
+    <link rel="stylesheet" href="styles/fontello-css/fontello.css">
+</head>
+
+<div ng-app="lianacorbApp" ng-controller="GalerieCtrl as glrCtrl" ng-keydown="glrCtrl.keyPress($event)" class="galerie">
+	<div class="jumbotron">
+		<ul>
+		 <li ng-repeat="img in glrCtrl.images">
+		    <img ng-src="{{ img.thumbnail }}" ng-click="glrCtrl.goFullscreen( img.url )">
+		  </li>
+		</ul>
+	</div>
+	
+	<div class="fullscreen noselect" ng-show="glrCtrl.fullscreen" ng-click="glrCtrl.exitFullscreen()">
+		<img ng-src="{{ glrCtrl.activeImg }}">		
+	</div>
+
+	<div class="previous noselect" ng-show="glrCtrl.fullscreen" ng-click="glrCtrl.loadPrevious()">
+		<img class="prev-icon noselect" src="../images/gallery_icons/previous_icon.png" ng-click="glrCtrl.loadPrevious()">
+	</div>
+	<div class="next noselect" ng-show="glrCtrl.fullscreen" ng-click="glrCtrl.loadNext()">
+		<img class="next-icon noselect" src="../images/gallery_icons/next_icon.png" ng-click="glrCtrl.loadNext()">	
+	</div>
+	<div class="close noselect" ng-show="glrCtrl.fullscreen" ng-click="glrCtrl.exitFullscreen()">
+		<img class="close-icon noselect" src="../images/gallery_icons/close_icon.png">
+	</div>
+</div>
